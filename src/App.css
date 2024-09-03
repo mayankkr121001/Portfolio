@@ -1,0 +1,238 @@
+html::-webkit-scrollbar {
+  width: 6px;
+  /* Width of the entire scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+  background: black;
+  /* Light grey background for the track */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  /* Dark grey scrollbar thumb */
+  border-radius: 5px;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+/*---------------------------- HOVER ANIMATION FOR NAV LINKS------------------------------------ */
+.navbarListItems {
+  position: relative;
+  width: fit-content;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 0px 5px;
+  color: White;
+  overflow: hidden;
+  background: linear-gradient(to left, yellow, yellow 49%, transparent 50%);
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  background-size: 200% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.8s ease;
+  text-decoration: none;
+
+}
+
+.navbarListItems:hover {
+  background-position: 100% 0%;
+  color: black;
+}
+
+.navbarListItemsActive {
+  color: black;
+  background-color: yellow;
+}
+
+
+/*----------------------- HAMBERGER MENU TRANSITION ------------------------------*/
+
+.navbarMenuIcon {
+  transform: scale(1);
+  transition: transform 0.2s linear;
+}
+
+.navbarMenuIcon:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s linear;
+}
+
+.topLine,
+.bottomLine {
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.middleLine {
+  transform-origin: center;
+  transition: opacity 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.navbarMenuIconActive {
+  .topLine {
+    transform-origin: center;
+    transform: translateY(12px) rotate(-45deg);
+    transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  }
+
+  .bottomLine {
+    transform-origin: center;
+    transform: translateY(-12px) rotate(45deg);
+    transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    ;
+
+  }
+
+  .middleLine {
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    ;
+
+  }
+}
+
+
+
+/* -------------------------------- MOBILE NAVBAR ANIMATION ---------------------------- */
+
+.mobileNavbarLinksUl {
+  transform: translateY(-100%);
+  transition: transform 0.4s linear;
+}
+
+.mobileNavbarLinksUlActive {
+  transform: translateY(0);
+  transition: transform 0.4s linear;
+
+}
+
+
+/* -------------------------------------DOWNLOAD BUTTON HOVER------------------------------------------------- */
+
+.downloadResumeBtn,
+.takeALookBtn {
+  background-color: yellow;
+  background: linear-gradient(to right, white, white 50%, yellow 50%);
+  /* background: linear-gradient(to right, rgb(228, 255, 119), rgb(228, 255, 119) 50%, yellow 50%); */
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.3s linear;
+}
+
+.downloadResumeBtn:hover,
+.takeALookBtn:hover {
+  background-position: 0 100%;
+}
+
+.downloadResumeBtn:active {
+
+  /* animation: shakeDownloadIcon 0.1s ease; */
+  .downloadResumeBtnImg {
+    animation: shakeDownloadIcon 0.1s ease;
+  }
+}
+
+.takeALookBtn:active {
+  img {
+    animation: shakeDownloadIcon 0.1s ease;
+
+  }
+}
+
+@keyframes shakeDownloadIcon {
+
+  0%,
+  100% {
+    transform: rotateZ(0deg);
+  }
+
+  40% {
+    transform: rotateZ(-10deg) translateX(-5px);
+  }
+
+  80% {
+    transform: rotateZ(10deg) translateX(5px);
+
+  }
+}
+
+/* ------------ABOUT SOCIAL ICONS----------- */
+.aboutSocialIconsDiv:hover,
+.takeALookGithub:hover {
+  /* transform-origin: center; */
+  transform: rotateZ(360deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0.84, 0.44, 1);
+}
+
+.aboutSocialIconsDiv:active,
+.takeALookGithub:active {
+  animation: shakeDownloadIcon 0.1s ease;
+  /* .aboutSocialIcons {
+    animation: shakeDownloadIcon 0.1s ease;
+  } */
+}
+
+
+/* ---------------------- SKILLS DIV -------------------------- */
+.skillsDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 50px;
+}
+
+
+/*  ------------------ Skills Card ------------------- */
+
+.skillCard {
+  transition: transform 0.6s ease;
+
+}
+
+.skillCard:hover{
+  transform: scale(1.07);
+  box-shadow: 0px 0px 5px 1px #1f1f1f;
+  transition: transform 0.4s ease;
+
+}
+
+
+/* ------------------Project Image--------------------- */
+
+.projectImageDiv {
+  perspective: 600px;
+  perspective-origin: center;
+}
+
+.projectImageDiv img {
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 0px 1px #9e9e9e; */
+  transition: box-shadow 0.4s ease;
+  
+}
+.projectImageDiv img:hover{
+  /* box-shadow: 0px 0px 5px 2px #363636; */
+  transition: box-shadow 0.4s ease;
+}
+
+/* ---------------- EDUCATION CARD ------------------ */
+
+
+.educationCard{
+  transition: transform 0.6s ease;
+}
+
+.educationCard:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px #1f1f1f;
+  /* border: solid white 1px;
+	box-shadow: 0px 0px 15px #6d95fc; */
+  transition: transform box-shadow 0.4s ease;
+
+}
