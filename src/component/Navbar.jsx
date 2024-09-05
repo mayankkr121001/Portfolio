@@ -24,6 +24,7 @@ function Navbar() {
 
     const onNavlinkMobileClickFunc = (index) => {
 
+
         if(navLinksMobileRef.current[index].getAttribute("href") == "#Resume"){
             navLinksMobileRef.current[index].setAttribute("href", resumePdf);
             navLinksMobileRef.current[index].setAttribute("target", "_blank");

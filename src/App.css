@@ -96,6 +96,12 @@ body {
   transition: transform 0.4s linear;
 }
 
+.mobileNavbarLinksUlActive {
+  transform: translateY(0);
+  transition: transform 0.4s linear;
+
+}
+
 
 
 /* -------------------------------------DOWNLOAD BUTTON HOVER------------------------------------------------- */
