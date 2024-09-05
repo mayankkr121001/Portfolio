@@ -47,7 +47,7 @@ const projectsArray = [
         image: portfolioImg,
         name: "Portfolio",
         description: "A personal portfolio website showcasing web development projects and skills. Built with React JS and Tailwind CSS, it also includes contact information for potential job opportunities.",
-        techStack: ["HTML", "CSS" , "React JS", "Tailwind CSS"],
+        techStack: ["HTML", "CSS", "React JS", "Tailwind CSS"],
         link: "#About",
         target: "",
         github: "https://github.com/mayankkr121001/Portfolio"
@@ -87,7 +87,7 @@ function Projects() {
                 </div>
 
                 {
-                    projectsArray.map((elm, index) => ((elm.sNo % 2 == 0 ) ?
+                    projectsArray.map((elm, index) => ((elm.sNo % 2 == 0) ?
                         <div key={index} className=' flex flex-col-reverse items-start lg:flex-row justify-center  gap-[50px] lg:gap-[10%] py-[80px]' >
                             <a href={elm.link} target={elm.target} className='projectImageDiv w-[80%] lg:w-[50%]'>
                                 <img className='lg:h-[250px] xl:h-auto' ref={(el) => (projectImage.current[index] = el)} onMouseMove={(e) => onImageMouseMoveFunc(e, index)} onMouseLeave={() => onImageMouseLeaveFunc(index)} src={elm.image} alt="weather App" />
@@ -103,10 +103,10 @@ function Projects() {
                                     <p>{elm.techStack[3]}</p>
                                 </div>
                                 <div className='flex gap-3 sm:gap-7 mt-8 xl:mt-9'>
-                                    <a href={elm.link} target={elm.target} className='takeALookBtn flex items-center gap-2 sm:gap-5 bg-[#fff000] text-black font-bold rounded-full px-5 sm:px-10 py-2'>
+                                    {(elm.name !== "Voteverse") && <a href={elm.link} target={elm.target} className='takeALookBtn flex items-center gap-2 sm:gap-5 bg-[#fff000] text-black font-bold rounded-full px-5 sm:px-10 py-2'>
                                         <img className='w-3' src={takeLookIcon} alt="takeLookIcon" />
                                         <p className='text-sm'>Take a Look</p>
-                                    </a>
+                                    </a>}
                                     <a href={elm.github} target='_blank'><img className='takeALookGithub bg-white rounded-full w-10 p-2' src={githubIcon} alt="github" /></a>
                                 </div>
                             </div>
@@ -127,10 +127,10 @@ function Projects() {
                                     <p>{elm.techStack[3]}</p>
                                 </div>
                                 <div className='flex gap-3 sm:gap-7 mt-8 xl:mt-9'>
-                                    <a href={elm.link} target={elm.target} className='takeALookBtn flex items-center gap-2 sm:gap-5 bg-[#fff000] text-black font-bold rounded-full px-5 sm:px-10 py-2'>
+                                    {(elm.name !== "Voteverse") && <a href={elm.link} target={elm.target} className='takeALookBtn flex items-center gap-2 sm:gap-5 bg-[#fff000] text-black font-bold rounded-full px-5 sm:px-10 py-2'>
                                         <img className='w-3' src={takeLookIcon} alt="takeLookIcon" />
                                         <p className='text-sm'>Take a Look</p>
-                                    </a>
+                                    </a>}
                                     <a href={elm.github} target='_blank'><img className='takeALookGithub bg-white rounded-full w-10 p-2' src={githubIcon} alt="github" /></a>
                                 </div>
                             </div>
