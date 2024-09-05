@@ -35,7 +35,6 @@ body {
 }
 
 .navbarListItems:hover {
-  font-weight: 800;
   background-position: 100% 0%;
   color: black;
 }
