@@ -47,8 +47,6 @@ const skillsArray = [
 
 function Skills() {
 
-
-
     return (
         <div id='Skills' className='w-full  pt-[150px] font-nunito'>
             <div className='text-center w-[55%] mx-auto'>

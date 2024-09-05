@@ -48,8 +48,8 @@ const projectsArray = [
         name: "Portfolio",
         description: "A personal portfolio website showcasing web development projects and skills. Built with React JS and Tailwind CSS, it also includes contact information for potential job opportunities.",
         techStack: ["HTML", "CSS" , "React JS", "Tailwind CSS"],
-        link: "javascript:void(0)",
-        target: "_blank",
+        link: "#About",
+        target: "",
         github: "https://github.com/mayankkr121001/Portfolio"
 
     },

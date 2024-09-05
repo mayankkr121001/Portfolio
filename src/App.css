@@ -35,13 +35,9 @@ body {
 }
 
 .navbarListItems:hover {
+  font-weight: 800;
   background-position: 100% 0%;
   color: black;
-}
-
-.navbarListItemsActive {
-  color: black;
-  background-color: yellow;
 }
 
 
@@ -101,11 +97,6 @@ body {
   transition: transform 0.4s linear;
 }
 
-.mobileNavbarLinksUlActive {
-  transform: translateY(0);
-  transition: transform 0.4s linear;
-
-}
 
 
 /* -------------------------------------DOWNLOAD BUTTON HOVER------------------------------------------------- */

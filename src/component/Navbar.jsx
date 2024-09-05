@@ -14,13 +14,6 @@ function Navbar() {
 
     const onNavlinkLaptopClickFunc = (index) => {
 
-        navLinksArray.forEach((elm, ind) => {
-            navLinksLaptopRef.current[ind].classList.remove("navbarListItemsActive");
-        })
-        navLinksLaptopRef.current[index].classList.add("navbarListItemsActive");
-
-
-        console.log(navLinksLaptopRef.current[index].getAttribute("href"));
         if(navLinksLaptopRef.current[index].getAttribute("href") == "#Resume"){
             navLinksLaptopRef.current[index].setAttribute("href", resumePdf);
             navLinksLaptopRef.current[index].setAttribute("target", "_blank");
@@ -31,10 +24,6 @@ function Navbar() {
 
     const onNavlinkMobileClickFunc = (index) => {
 
-        navLinksArray.forEach((elm, ind) => {
-            navLinksMobileRef.current[ind].classList.remove("navbarListItemsActive");
-        })
-        navLinksMobileRef.current[index].classList.add("navbarListItemsActive");
         if(navLinksMobileRef.current[index].getAttribute("href") == "#Resume"){
             navLinksMobileRef.current[index].setAttribute("href", resumePdf);
             navLinksMobileRef.current[index].setAttribute("target", "_blank");
@@ -56,7 +45,7 @@ function Navbar() {
                 <ul className='hidden mbTb:flex items-center sm:gap-4 md:text-md md:gap-7 lg:text-lg xl:gap-9 font-nunito '>
                     {
                         navLinksArray.map((element, index) => (
-                            <a key={index} href={`#${element}`} ref={(el) => (navLinksLaptopRef.current[index] = el)} onClick={() => onNavlinkLaptopClickFunc(index)} className='navbarListItems cursor-pointer'>{element}</a>
+                            <a key={index} href={`#${element}`} ref={(el) => (navLinksLaptopRef.current[index] = el)} onClick={() => onNavlinkLaptopClickFunc(index)} className='navbarListItems cursor-pointer font-bold'>{element}</a>
                         ))
                     }
                 </ul>
