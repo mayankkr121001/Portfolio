@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import resumePdf from "../assets/RESUME.pdf"
 
 
@@ -11,13 +11,8 @@ function Navbar() {
     
     const navLinksArray = ["About", "Resume", "Skills", "Projects", "Education", "Contact"];
 
-    // useEffect(()=>{
-    //     navLinksRef.current[0].current.classList.add('navbarListItemsActive')
-    // }, [])
 
     const onNavlinkLaptopClickFunc = (index) => {
-        // console.log("clicked", index);
-        // console.log(navLinksLaptopRef.current[index]);
 
         navLinksArray.forEach((elm, ind) => {
             navLinksLaptopRef.current[ind].classList.remove("navbarListItemsActive");
@@ -35,7 +30,6 @@ function Navbar() {
 
 
     const onNavlinkMobileClickFunc = (index) => {
-        // console.log("clicked", index);
 
         navLinksArray.forEach((elm, ind) => {
             navLinksMobileRef.current[ind].classList.remove("navbarListItemsActive");

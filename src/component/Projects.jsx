@@ -49,8 +49,8 @@ const projectsArray = [
         description: "A personal portfolio website showcasing web development projects and skills. Built with React JS and Tailwind CSS, it also includes contact information for potential job opportunities.",
         techStack: ["HTML", "CSS" , "React JS", "Tailwind CSS"],
         link: "javascript:void(0)",
-        target: "",
-        github: ""
+        target: "_blank",
+        github: "https://github.com/mayankkr121001/Portfolio"
 
     },
 ]
@@ -60,8 +60,6 @@ function Projects() {
     const projectImage = useRef([]);
 
     const onImageMouseMoveFunc = (e, index) => {
-        // console.log(projectImage.current[index]);
-        // console.log(e.clientX);
         let imagePosition = projectImage.current[index].getBoundingClientRect();
         let mouseX = e.clientX - imagePosition.left;
         let mouseY = e.clientY - imagePosition.top;

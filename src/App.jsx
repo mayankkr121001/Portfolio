@@ -17,7 +17,6 @@ function App() {
         <Projects/>
         <Education/>
         <Contact/>
-        {/* <div className='text-4xl text-white'>App</div> */}
       </div>
   )
 }
