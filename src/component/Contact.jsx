@@ -11,8 +11,8 @@ function Contact() {
         <div id='Contact' className='w-full font-nunito pt-[100px]'>
             <div className='text-center'>
                 <div className='flex gap-2 md:gap-5 justify-center items-center mb-6'>
-                    <img className='w-7' src={contactIcon} alt="education icon" />
-                    <h1 className='text-xl sm:text-2xl md:text-4xl font-bold'>Contact</h1>
+                    <img className='w-6' src={contactIcon} alt="education icon" />
+                    <h1 className='text-xl sm:text-2xl md:text-3xl font-bold'>Contact</h1>
                 </div>
                 <div className='bg-[#c5ba22] text-black px-[5%] lg:px-[8%] pt-[50px]'>
                     <div className='flex flex-col gap-[50px] sm:flex-row sm:gap-[8%] md:gap-[15%] mbTb:justify-between'>
