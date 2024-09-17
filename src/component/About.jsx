@@ -31,7 +31,7 @@ function About() {
         <div id='About' className='w-full font-nunito pt-[130px]'>
             <div className='tracking-widest w-[100%] mx-auto flex py-4 pl-[8%] pr-[8%]'>
                 <div className='flex flex-col items-center mbTb:items-top mbTb:flex-row mbTb:gap-[5%] xl:gap-[15%]'>
-                    <div className='mbTb:w-[50%] pt-[50px]'>
+                    <div className=' mbTb:w-[50%] pt-[50px] pr-[12%]'>
                         <h3 className='text-[#c3c3c3]'>Hello, My name is</h3>
                         <h1 className='text-5xl font-bold py-2'>Mayank Kumar</h1>
                         <h2 className='text-[#c5ba22] text-2xl font-semibold'>WEB DEVELOPER</h2>
