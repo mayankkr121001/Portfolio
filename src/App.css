@@ -24,9 +24,9 @@ body {
   font-weight: 700;
   border-radius: 3px;
   padding: 0px 5px;
-  color: White;
+  color: white;
   overflow: hidden;
-  background: linear-gradient(to left, yellow, yellow 49%, transparent 50%);
+  background: linear-gradient(to left, #c5ba22, #c5ba22 49%, transparent 50%);
   background-size: 200% 100%;
   background-position: 0% 100%;
   transition: background-position 0.8s ease;
@@ -108,8 +108,8 @@ body {
 
 .downloadResumeBtn,
 .takeALookBtn {
-  background-color: yellow;
-  background: linear-gradient(to right, white, white 50%, yellow 50%);
+  background-color: #c5ba22;
+  background: linear-gradient(to right, white, white 50%, #c5ba22 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: background-position 0.3s linear;
@@ -149,12 +149,24 @@ body {
 
   }
 }
+/* -------------My Image ---------------------- */
+.myImage{
+  border-radius: 62% 38% 38% 62% / 33% 27% 73% 67% ;
+}
+
+.myImageDiv {
+  perspective: 600px;
+  perspective-origin: center;
+}
 
 /* ------------ABOUT SOCIAL ICONS----------- */
+.aboutSocialIconsDiv, .takeALookGithub{
+  transition: transform 0.5s cubic-bezier(0.4, 0.84, 0.44, 1);
+}
 .aboutSocialIconsDiv:hover,
 .takeALookGithub:hover {
   transform: rotateZ(360deg);
-  transition: transform 0.4s cubic-bezier(0.4, 0.84, 0.44, 1);
+  transition: transform 0.5s cubic-bezier(0.4, 0.84, 0.44, 1);
 }
 
 .aboutSocialIconsDiv:active,
@@ -166,23 +178,20 @@ body {
 /* ---------------------- SKILLS DIV -------------------------- */
 .skillsDiv {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 40px;
 }
 
 
 /*  ------------------ Skills Card ------------------- */
 
 .skillCard {
-  transition: transform 0.6s ease;
-
+  transition: transform 0.4s ease;
 }
 
 .skillCard:hover{
   transform: scale(1.07);
-  box-shadow: 0px 0px 5px 1px #1f1f1f;
   transition: transform 0.4s ease;
-
 }
 
 
@@ -205,12 +214,12 @@ body {
 
 
 .educationCard{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s linear;
+  z-index: 2;
 }
 
 .educationCard:hover{
-  transform: scale(1.03);
-  box-shadow: 0px 0px 5px 1px #1f1f1f;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  transform: scale(1.2);
+  transition: transform 0.4s linear;
+  z-index: 3;
 }

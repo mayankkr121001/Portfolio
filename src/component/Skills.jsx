@@ -48,18 +48,18 @@ const skillsArray = [
 function Skills() {
 
     return (
-        <div id='Skills' className='w-full  pt-[150px] font-nunito'>
-            <div className='text-center w-[55%] mx-auto'>
+        <div id='Skills' className='w-full mt-[30px] pt-[130px] font-nunito'>
+            <div  className='text-center w-[55%] mx-auto'>
                 <div className='flex gap-2 md:gap-5 justify-center items-center'>
-                    <img className='w-7' src={laptopIcon} alt="" />
-                    <h1 className='text-xl sm:text-2xl md:text-4xl font-bold'>Skills</h1>
+                    <img className='w-6' src={laptopIcon} alt="icon" />
+                    <h1 className='text-xl sm:text-2xl md:text-3xl font-bold'>Skills</h1>
                 </div>
-                <div className='skillsDiv py-16'>
+                <div className='skillsDiv py-12'>
                     {
                         skillsArray.map((elm, index) => (
-                            <div key={index} className='skillCard bg-zinc-950 p-7 flex flex-col items-center rounded-md'>
-                                <img className='w-[60px]' src={elm.image} alt="html icon" />
-                                <p className='pt-5 text-md text-[#fff000] font-bold'>{elm.name}</p>
+                            <div key={index} className='skillCard bg-zinc-950 px-7 py-8 flex flex-col items-center rounded-md'>
+                                <img className='w-[50px]' src={elm.image} alt="html icon" />
+                                <p className='pt-5 text-md text-[#c5ba22] font-bold'>{elm.name}</p>
                             </div>
 
                         ))
