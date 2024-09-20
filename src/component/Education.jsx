@@ -23,7 +23,7 @@ const educationArray = [
     {
         qualification: "Bachelor of Computer Application",
         year: "2021-2024",
-        grade: "GPA - Result not declared yet",
+        grade: "CGPA - 8.16",
         institution: "Guru Nanak College, Dhanbad",
         image: bcaImg
     },
