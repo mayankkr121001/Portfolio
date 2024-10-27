@@ -3,6 +3,7 @@ import contactIcon from "../assets/contactIcon.png"
 import linkedinIcon from "../assets/linkedinIcon.png"
 import githubIcon from "../assets/githubIcon.png"
 import mailIcon from "../assets/mailIcon.png"
+import instagram from '../assets/instagram.png'
 import callIcon from "../assets/callIcon.png"
 import locationIcon from "../assets/locationIcon.png"
 
@@ -28,6 +29,9 @@ function Contact() {
                                 </a>
                                 <a href='mailto:mayanksahu121001@gmail.com' target='_blank' className='aboutSocialIconsDiv bg-blue-500 rounded-full inline-block p-2 w-10 mr-4'>
                                     <img className="aboutSocialIcons w-8" src={mailIcon} alt="github" />
+                                </a>
+                                <a href='https://www.instagram.com/mayanksaw12/' target='_blank' className='aboutSocialIconsDiv bg-blue-500 rounded-full inline-block p-2 w-10 mr-4'>
+                                    <img className="aboutSocialIcons w-8" src={instagram} alt="github" />
                                 </a>
                             </div>
                         </div>
