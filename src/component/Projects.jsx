@@ -6,18 +6,20 @@ import weatherImg from "../assets/weatherImg.png"
 import noteImg from "../assets/noteImg.png"
 import votingImg from "../assets/votingImg.png"
 import portfolioImg from "../assets/portfolioImg.png"
+import chatSync from "../assets/chatSync.png"
+import locationFinder from "../assets/locationFinder.png"
 
 
 const projectsArray = [
     {
         sNo: 1,
-        image: weatherImg,
-        name: "Weather App",
-        description: "It shows current temperature, other weather conditions, 3 days forecast and has a whole day temperature forecast in a 3-hour difference in graph.",
-        techStack: ["HTML", "CSS", "React JS", "Weather API"],
-        link: "https://weather-app-mk12.netlify.app/",
+        image: chatSync,
+        name: "ChatSync",
+        description: "A chat website in which we can Register, Login and chat by searching other users and we can also add story.",
+        techStack: ["React JS", "NodeJS", "MongoDB", "Socket.io"],
+        link: "https://chat-sync-pi.vercel.app/",
         target: "_blank",
-        github: "https://github.com/mayankkr121001/weather-app"
+        github: "https://github.com/mayankkr121001/Chat-Sync"
 
     },
     {
@@ -33,6 +35,17 @@ const projectsArray = [
     },
     {
         sNo: 3,
+        image: weatherImg,
+        name: "Weather App",
+        description: "It shows current temperature, other weather conditions, 3 days forecast and has a whole day temperature forecast in a 3-hour difference in graph.",
+        techStack: ["HTML", "CSS", "React JS", "Weather API"],
+        link: "https://weather-app-mk12.netlify.app/",
+        target: "_blank",
+        github: "https://github.com/mayankkr121001/weather-app"
+
+    },
+    {
+        sNo: 4,
         image: votingImg,
         name: "Voteverse",
         description: "A college / school voting web app in which student can login using credential given by admin and can vote. It also has a admin panel through which admin host elections. ( College project )",
@@ -43,7 +56,18 @@ const projectsArray = [
 
     },
     {
-        sNo: 4,
+        sNo: 5,
+        image: locationFinder,
+        name: "Location Finder",
+        description: "A web app to show location of any city by searching on maps.",
+        techStack: ["HTML", "Tailwind CSS", "React JS", "Google maps api"],
+        link: "https://locationfinder10.netlify.app/",
+        target: "_blank",
+        github: "https://github.com/mayankkr121001/location-finder"
+
+    },
+    {
+        sNo: 6,
         image: portfolioImg,
         name: "Portfolio",
         description: "A personal portfolio website showcasing web development projects and skills. Built with React JS and Tailwind CSS, it also includes contact information for potential job opportunities.",
