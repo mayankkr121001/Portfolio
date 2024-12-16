@@ -47,7 +47,7 @@ function Contact() {
                             </div>
                             <div className='flex items-center gap-4 pt-2'>
                                 <img className='w-4 h-4' src={locationIcon} alt="call" />
-                                <p>Dhanbad, India</p>
+                                <p>New Delhi, India</p>
                             </div>
                         </div>
 

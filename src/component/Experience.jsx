@@ -11,10 +11,11 @@ function Experience() {
                 </div>
                 <div className='w-full flex flex-col gap-10 my-10'>
                     <div className="bg-zinc-950 text-left p-5 sm:p-10">
-                        <p className='text-2xl'>Web Developer Intern</p>
-                        <a href='https://www.unbundl.com' target='_blank' className='text-lg text-[#c5ba22] font-bold'>Unbundl</a>
-                        <p className='text-sm text-blue-500 mt-1'>Dec 2024 - Present</p>
-                        <ul className='list-disc ml-4 my-3 flex flex-col gap-1'>
+                        <p className='text-2xl mb-1'>Web Developer Intern</p>
+                        <a href='https://www.unbundl.com' target='_blank' className='text-xl text-[#c5ba22] font-bold'>Unbundl</a>
+                        <p className='text-sm'>New Delhi, Delhi</p>
+                        <p className='text-sm text-blue-500 mt-2'>Dec 2024 - Present</p>
+                        <ul className='list-disc ml-4 my-2 flex flex-col gap-1'>
                             <li>Customized Shopify themes using Liquid, HTML, and CSS for improved UX.</li>
                             <li>Gaining hands on experience.</li>
                         </ul>
