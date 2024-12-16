@@ -9,7 +9,7 @@ function Navbar() {
     const navLinksLaptopRef = useRef([]);
     const navLinksMobileRef = useRef([]);
     
-    const navLinksArray = ["About", "Resume", "Skills", "Projects", "Education", "Contact"];
+    const navLinksArray = ["About", "Resume", "Skills", "Experience", "Projects", "Education", "Contact"];
 
 
     const onNavlinkLaptopClickFunc = (index) => {
