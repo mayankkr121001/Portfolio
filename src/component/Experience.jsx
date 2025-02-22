@@ -16,8 +16,9 @@ function Experience() {
                         <p className='text-sm'>New Delhi, Delhi</p>
                         <p className='text-sm text-blue-500 mt-2'>Dec 2024 - Present</p>
                         <ul className='list-disc ml-4 my-2 flex flex-col gap-1'>
-                            <li>Customized Shopify themes using Liquid, HTML, and CSS for improved UX.</li>
-                            <li>Gaining hands on experience.</li>
+                            <li>Developed and optimized dynamic, responsive web applications using React, HTML, CSS, and JavaScript.</li>
+                            <li>Customized and implemented interactive UI components to enhance user experience and accessibility.</li>
+                            <li>Gained hands-on experience in managing and deploying scalable web applications with a focus on performance and usability.</li>
                         </ul>
                     </div>
                 </div>
