@@ -12,6 +12,7 @@ export default {
       'md': '850px',
       'mbTb': '930px',
       'lg': '1024px',
+      'lgxl': '1150px',
       'xl': '1280px',
       '2xl': '1536px',
 

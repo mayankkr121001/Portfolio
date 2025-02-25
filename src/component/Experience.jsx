@@ -1,8 +1,10 @@
 import React from 'react'
 import experience from "../assets/experience.png"
 
+
 function Experience() {
     return (
+        <>
         <div id='Experience' className='w-full mt-[30px] pt-[90px] pb-[40px] font-nunito'>
             <div className='text-center px-[8%]'>
                 <div className='flex gap-2 md:gap-5 justify-center items-center'>
@@ -24,6 +26,7 @@ function Experience() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

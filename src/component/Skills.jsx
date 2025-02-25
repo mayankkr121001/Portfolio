@@ -48,7 +48,7 @@ const skillsArray = [
 function Skills() {
 
     return (
-        <div id='Skills' className='w-full mt-[30px] pt-[130px] font-nunito'>
+        <div id='Skills' className='w-full mt-[30px] pt-[50px] lg:pt-[130px] font-nunito'>
             <div  className='text-center w-[80%] 2xl:w-[60%] mx-auto'>
                 <div className='flex gap-2 md:gap-5 justify-center items-center'>
                     <img className='w-6' src={laptopIcon} alt="icon" />

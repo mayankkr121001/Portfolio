@@ -103,6 +103,7 @@ function Projects() {
     }
 
     return (
+        <>
         <div id='Projects' className='w-full font-nunito mt-[40px] pt-[20px]'>
             <div className='bg-zinc-950 text-center mx-auto pt-[90px] pb-[80px] px-[8%]'>
                 <div className='flex gap-2 md:gap-5 justify-center items-center mb-6'>
@@ -143,6 +144,7 @@ function Projects() {
 
             </div>
         </div >
+        </>
     )
 }
 
