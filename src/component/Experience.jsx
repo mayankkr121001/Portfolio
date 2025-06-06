@@ -63,7 +63,7 @@ function Experience() {
                                 <li>Developed and optimized dynamic, responsive web applications using React, HTML, CSS, and JavaScript.</li>
                                 <li>Customized and implemented interactive UI components to enhance user experience and accessibility.</li>
                                 <li>Gained hands-on experience in managing and deploying scalable web applications with a focus on performance and usability.</li>
-                                <li>Works on many wesites :
+                                <li>Worked on many wesites :
                                     <div className='flex flex-wrap'>
                                         {unbWebsites.map(web => (
                                             <a href={web.url} target='_blank' className='text-[#c5ba22] mr-8'>{web.name}</a>
