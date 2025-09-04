@@ -73,6 +73,18 @@ function Experience() {
                                 </li>
                             </ul>
                         </div>
+                        <div className="bg-zinc-950 text-left p-5 sm:p-10">
+                            <p className='text-2xl mb-1'>Mern Web Developer</p>
+                            <a href='https://www.unbundl.com' target='_blank' className='text-xl text-[#c5ba22] font-bold'>Billions Holidays</a>
+                            <p className='text-sm'>New Delhi, Delhi</p>
+                            <p className='text-sm text-blue-500 mt-2'>June 2025 - present</p>
+                            <ul className='list-disc ml-4 my-2 flex flex-col gap-1'>
+                                <li>Developed and deployed a complete website independently using the MERN stack.</li>
+                                <li>Designed responsive and modern user interfaces with React.js & Tailwind CSS.</li>
+                                <li>Built and integrated secure RESTful APIs with Express.js & MongoDB.</li>
+                                <li>Managed full-cycle development including frontend, backend, database, and deployment.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
