@@ -3,8 +3,10 @@ import htmlIcon from "../assets/html-5.png"
 import cssIcon from "../assets/css-3.png"
 import jsIcon from "../assets/js.png"
 import reactIcon from "../assets/reactjs.png"
+import nextjsIcon from "../assets/nextjs.svg"
 import nodeIcon from "../assets/nodejs.png"
 import mongodbIcon from "../assets/mongodb.png"
+import mysqlIcon from "../assets/mysql.svg"
 import tailwindIcon from "../assets/tailwind.png"
 import gitIcon from "../assets/git.png"
 import laptopIcon from "../assets/laptop.png"
@@ -28,12 +30,20 @@ const skillsArray = [
         name: "React Js"
     },
     {
+        image: nextjsIcon,
+        name: "Next.js"
+    },
+    {
         image: nodeIcon,
         name: "Node.js"
     },
     {
         image: mongodbIcon,
         name: "MongoDB"
+    },
+    {
+        image: mysqlIcon,
+        name: "MySQL"
     },
     {
         image: tailwindIcon,

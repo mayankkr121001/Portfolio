@@ -17,7 +17,7 @@ function Navbar() {
         if(navLinksLaptopRef.current[index].getAttribute("href") == "#Resume"){
             navLinksLaptopRef.current[index].setAttribute("href", resumePdf);
             navLinksLaptopRef.current[index].setAttribute("target", "_blank");
-        }
+        } 
     }
 
 
