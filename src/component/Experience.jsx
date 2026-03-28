@@ -65,17 +65,19 @@ function Experience() {
                             </ul>
                         </div>
                         <div className="bg-zinc-950 text-left p-5 sm:p-10">
-                            <p className='text-2xl mb-1'>MERN Full Stack Developer</p>
+                            <p className='text-2xl mb-1'>Mern Web Developer</p>
                             <a href='https://www.billionsholidays.com' target='_blank' className='text-xl text-[#c5ba22] font-bold'>Billions Holidays</a>
                             <p className='text-sm'>New Delhi, Delhi</p>
                             <p className='text-sm text-blue-500 mt-2'>June 2025 - Nov 2025</p>
                             <ul className='list-disc ml-4 my-2 flex flex-col gap-1'>
-                                <li>Independently developed and deployed a full-stack website using the MERN stack.</li>
-                                <li>Built responsive UIs with React.js & Tailwind CSS and integrated secure APIs with Express.js & MongoDB.</li>
+                                <li>Developed and deployed a complete website independently using the MERN stack.</li>
+                                <li>Designed responsive and modern user interfaces with React.js & Tailwind CSS.</li>
+                                <li>Built and integrated secure RESTful APIs with Express.js & MongoDB.</li>
+                                <li>Managed full-cycle development including frontend, backend, database, and deployment.</li>
                             </ul>
                         </div>
                         <div className="bg-zinc-950 text-left p-5 sm:p-10">
-                            <p className='text-2xl mb-1'>Full Stack Developer Intern</p>
+                            <p className='text-2xl mb-1'>Web Developer Intern</p>
                             <a href='https://www.unbundl.com' target='_blank' className='text-xl text-[#c5ba22] font-bold'>Unbundl</a>
                             <p className='text-sm'>New Delhi, Delhi</p>
                             <p className='text-sm text-blue-500 mt-2'>Dec 2024 - May 2025</p>
@@ -83,10 +85,10 @@ function Experience() {
                                 <li>Developed and optimized dynamic, responsive web applications using React, HTML, CSS, and JavaScript.</li>
                                 <li>Customized and implemented interactive UI components to enhance user experience and accessibility.</li>
                                 <li>Gained hands-on experience in managing and deploying scalable web applications with a focus on performance and usability.</li>
-                                <li>Worked on many websites :
+                                <li>Worked on many wesites :
                                     <div className='flex flex-wrap'>
                                         {unbWebsites.map(web => (
-                                            <a key={web.name} href={web.url} target='_blank' className='text-[#c5ba22] mr-8'>{web.name}</a>
+                                            <a href={web.url} target='_blank' className='text-[#c5ba22] mr-8'>{web.name}</a>
                                         ))}
                                         etc.
                                     </div>

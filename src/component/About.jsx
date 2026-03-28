@@ -34,7 +34,7 @@ function About() {
                     <div className=' mbTb:w-[50%] pt-[50px] pr-[12%]'>
                         <h3 className='text-[#c3c3c3]'>Hello, My name is</h3>
                         <h1 className='text-5xl font-bold py-2'>Mayank Kumar</h1>
-                        <h2 className='text-[#c5ba22] text-2xl font-semibold'>WEB DEVELOPER</h2>
+                        <h2 className='text-[#c5ba22] text-2xl font-semibold'>FULL STACK DEVELOPER</h2>
                         <p className='text-[#9e9e9e] text-[13px] py-2'>I design, build, and maintain websites, ensuring functionality, user experience, and performance across various devices and browsers.</p>
                         <p className='text-[#c3c3c3]'>Open for work and collaborations.</p>
 
