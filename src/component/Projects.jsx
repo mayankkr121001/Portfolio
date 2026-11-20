@@ -8,11 +8,24 @@ import votingImg from "../assets/votingImg.png"
 import portfolioImg from "../assets/portfolioImg.png"
 import chatSync from "../assets/chatSync.png"
 import locationFinder from "../assets/locationFinder.png"
+import apahImg from "../assets/freelance1.png"
+import gridRushImg from "../assets/gridRush.png"
 
 
 const projectsArray = [
     {
         sNo: 1,
+        image: gridRushImg,
+        name: "Grid Rush",
+        description: "A collaborative real-time grid application with instant cell claiming and updates, using Socket.IO for instant communication and conflict handling between users.",
+        techStack: ["Next.js", "Node.js", "Express.js", "Socket.IO"],
+        link: "https://grid-rush-alpha.vercel.app/",
+        target: "_blank",
+        github: "https://github.com/mayankkr121001/grid-rush"
+
+    },
+    {
+        sNo: 2,
         image: chatSync,
         name: "ChatSync",
         description: "A chat website in which we can Register, Login and chat by searching other users and we can also add story.",
@@ -23,7 +36,7 @@ const projectsArray = [
 
     },
     {
-        sNo: 2,
+        sNo: 3,
         image: noteImg,
         name: "Notes Here",
         description: "A Note keeping website in which we can Register, Login and keep our notes in which we can add title, content, note color, and image and can also edit them.",
@@ -34,7 +47,18 @@ const projectsArray = [
 
     },
     {
-        sNo: 3,
+        sNo: 4,
+        image: apahImg,
+        name: "Apah Technologies",
+        description: "A static react js website for Apah Technologies for providing and contacting information to potential customers.",
+        techStack: ["HTML", "Tailwind CSS", "React JS", ""],
+        link: "https://www.apahtech.in",
+        target: "_blank",
+        github: "https://github.com/mayankkr121001/apah-website"
+
+    },
+    {
+        sNo: 5,
         image: weatherImg,
         name: "Weather App",
         description: "It shows current temperature, other weather conditions, 3 days forecast and has a whole day temperature forecast in a 3-hour difference in graph.",
@@ -45,7 +69,7 @@ const projectsArray = [
 
     },
     {
-        sNo: 4,
+        sNo: 6,
         image: votingImg,
         name: "Voteverse",
         description: "A college / school voting web app in which student can login using credential given by admin and can vote. It also has a admin panel through which admin host elections. ( College project )",
@@ -56,7 +80,7 @@ const projectsArray = [
 
     },
     {
-        sNo: 5,
+        sNo: 7,
         image: locationFinder,
         name: "Location Finder",
         description: "A web app to show location of any city by searching on maps.",
@@ -67,7 +91,7 @@ const projectsArray = [
 
     },
     {
-        sNo: 6,
+        sNo: 8,
         image: portfolioImg,
         name: "Portfolio",
         description: "A personal portfolio website showcasing web development projects and skills. Built with React JS and Tailwind CSS, it also includes contact information for potential job opportunities.",
@@ -134,7 +158,7 @@ function Projects() {
                         </div>
 
                         <a href={elm.link} target={elm.target} className='projectImageDiv w-[80%] lg:w-[50%]'>
-                            <img className='w-[80%]' ref={(el) => (projectImage.current[index] = el)} onMouseMove={(e) => onImageMouseMoveFunc(e, index)} onMouseLeave={() => onImageMouseLeaveFunc(index)} src={elm.image} alt="weather App" />
+                            <img className='w-[80%]' ref={(el) => (projectImage.current[index] = el)} onMouseMove={(e) => onImageMouseMoveFunc(e, index)} onMouseLeave={() => onImageMouseLeaveFunc(index)} src={elm.image} alt={elm.name} />
                         </a>
                     </div>
                 ))}

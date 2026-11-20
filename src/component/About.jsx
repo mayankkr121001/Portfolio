@@ -3,7 +3,7 @@ import myImage from "../assets/myImage.jpeg"
 import linkedinIcon from "../assets/linkedinIcon.png"
 import githubIcon from "../assets/githubIcon.png"
 import cloudDownloadIcon from "../assets/cloud-download.png"
-import resumePdf from "../assets/RESUME.pdf"
+import resumePdf from "../assets/Mayank_Kumar_Resume.pdf"
 
 function About() {
     const myImageRef = useRef(null);
